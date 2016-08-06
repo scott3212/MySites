@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+	<jsp:directive.page contentType="text/html; charset=ISO-8859-1" 
+		pageEncoding="ISO-8859-1" session="false"/>
+	<jsp:output doctype-root-element="html"
+		doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+		omit-xml-declaration="true" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Export and Deploy</title>
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/res/cc.css"/>
+</head>
+<body>
+	<h2>How to Export a Project into war file, and deploy it on DB and Server</h2>
+	<ul>
+		<li>How to export a Velocity Studio Project (metadata) to a war file</li>
+		<ul>
+			<li>
+			Go to [Velocity Studio directory] -> designer -> env using any terminal (cmd, powershell, etc.)
+			</li>
+			<li>
+			Run the following command:
+				<p class='codingArea' >
+				./runPackage.cmd -multiTenancy [app_name]:1:[node]:cwf:[DB_name] -warFile c:\[exportFolder]\cwf.war
+				</p>
+			</li>
+		</ul>
+		<li>How to deploy application to DB</li>
+		<ul>
+			<li>In Velocity studio, click runtime -> Deploy Application</li>
+		</ul>
+		<li>How to deploy application on server</li>
+		<ul>
+			<li>Install JBoss (usually you don't have to do this)</li>
+			<li>Put cwf.war file into [JBossDir]\standalone\deployments\</li>
+			<li>Goto [JBossDir]\standalone\configuration\, modify standalone.xml file:</li>
+			<li>Looking for tag server -> profile -> subsystem [2nd one], modify DB Info</li>
+			<li style="list-style-type:square">This step may not require if the deployment procedure 
+				can run properly.</li>
+		</ul>
+		<li>How to run two JBoss on same server</li>
+		<ul>
+			<li>Copy the whole JBoss folder, and modify the standalone.xml as described in 
+				last step above</li>
+		</ul>
+		<li>Run EFTF
+			<p class="codingArea">
+				java -jar eftf-uber.jar client --jar eftf-testcase.jar --package com.ericsson.eftftests.testsuite
+			</p>
+		</li>
+		
+	</ul>
+</body>
+</html>
+</jsp:root>

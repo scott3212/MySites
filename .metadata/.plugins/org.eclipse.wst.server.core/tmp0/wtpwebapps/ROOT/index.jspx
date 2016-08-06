@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+	<jsp:directive.page contentType="text/html; charset=ISO-8859-1" 
+		pageEncoding="ISO-8859-1" session="false"/>
+	<jsp:output doctype-root-element="html"
+		doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+		omit-xml-declaration="true" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Huizhen Wu's Site</title>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/res/cc.css"/>
+</head>
+<body>
+	<h1>Hello, Visitors! Welcome to my Site!</h1>
+	This site is currently under construction, or is for testing purpose. Please come back later!
+	<br/>
+	<br/><h2 style="color:red;">Concents</h2>
+	<h3>Ericsson</h3>
+	<div style="margin-left:10px">
+		<ul>
+			<li>
+				<h4 class='inline'>How to export project as war file in Velocity
+					Studio, and deploy it on server
+				</h4>
+				<form action="Deploy" method="POST" class="inline">
+					<input type="submit" value="See Details"></input>
+				</form>
+			</li>
+			<li>
+				<h4 class='inline'>How to active testportal, to get 
+					graphic output
+				</h4>
+				<form action="Testportal" method="POST" class="inline">
+					<input type="submit" value="See Details"></input>
+				</form>
+			</li>
+			<li>
+				<h4 class='inline'>Node JS </h4>
+				<form action="NodeJS" method="POST" class="inline">
+					<input type="submit" value="See Details"></input>
+				</form>
+			</li>
+		</ul>
+		<br/>
+	</div>
+	<h3>Build Server with no-ip</h3>
+	<div style="margin-left:10px">
+		<ul>
+			<li>
+				<h4 class='inline'>Build a FTP server</h4>
+				<form action="BuildingFTP" method="POST" class="inline">
+					<input type="submit" value="See Details"></input>
+				</form>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
+</jsp:root>

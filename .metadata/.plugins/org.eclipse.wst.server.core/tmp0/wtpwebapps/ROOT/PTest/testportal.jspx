@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+	<jsp:directive.page contentType="text/html; charset=UTF-8" 
+		pageEncoding="UTF-8" session="false"/>
+	<jsp:output doctype-root-element="html"
+		doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+		doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+		omit-xml-declaration="true" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Launch testportal</title>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/res/cc.css"/>
+</head>
+<body>
+	<h2>Here is the way to launch testportal</h2>
+	<ul>
+		<li>
+			Open two terminal:
+		</li>
+		<li>
+			Terminal #1 run:
+			<p class="codingArea">
+			nohup mongod –replSet eftf &amp; 
+			</p>
+		</li>
+		<li>
+			Terminal #2 :
+			<ul>
+				<li>
+					Goto /usr/eftftestportal/eftftestportal/
+				</li>
+				<li class="codingArea">
+					virtualenv eftftestportal
+				</li>
+				<li>
+					Goto /usr/eftftestportal/eftftestportal/bin/
+				</li>
+				<li class="codingArea">
+					source activate
+				</li>
+				<li class="codingArea">
+					testportal
+				</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
+</jsp:root>

@@ -1,0 +1,19 @@
+INDEX VERSION 1.127
+J:\Dropbox\MySites\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\372245508.index
+\ROOT\src
+J:\Dropbox\MySites\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\755329919.index
+\ROOT\src
+J:\Dropbox\MySites\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1927182822.index
+\mysite\src
+J:\Dropbox\MySites\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1244983034.index
+\mysite\src
+J:\Dropbox\MySites\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3434450339.index
+\ROOT\src
+J:\Dropbox\MySites\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\982791972.index
+\MainSite\src
+J:\Dropbox\MySites\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\246784127.index
+\mysite\src
+J:\Dropbox\MySites\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\107385744.index
+\MainSite\src
+J:\Dropbox\MySites\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1767373610.index
+\MainSite\src
